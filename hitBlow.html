@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Hit and Blow</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Hit and blow</h1>
+
+    <p>
+      4桁の数字を入力してください．
+      入力時は各桁が異なるようにしてください．
+      <ul>
+        <li>hit ：数字と桁がともに一致</li>
+        <li>blow：数字のみ一致（桁は異なる）</li>
+      </ul>
+      10回以内に正解の数字を当てれば勝ちです．
+    </p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label
+      ><input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="Submit guess" class="guessSubmit" />
+    </div>
+
+    <div class="resultParas">
+      <p class="lastResult"></p>
+      <p class="guesses"></p>
+    </div>
+
+    <script type="text/javascript" src="hitblow.js"></script>
+  </body>
+</html>
